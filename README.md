@@ -1,4 +1,6 @@
 # ３期生ミニハッカソン
+## 説明
+- 環境構築方法やgithubActoinsを用いたissue作成方法等は[こちら](./setup.md)を必ず見てください！！！
 
 ## 案件者
 - TLAのkazu
@@ -91,43 +93,5 @@ docker compose exec node npm run dev
 - これは、nodeコンテナでnpm run devを実行するコマンドです。
 - これでtailwind等のコンパイルができるようになります。
 
-- 作業後、以下のコマンドを実行してください
-```
-docker compose exec app composer analyse
-```
-- エラーが出たら、修正してください
-- これは静的解析を行うコマンドです。
-  - 静的解析とは、コードの品質をチェックすることです。
 
-```
-docker compose exec node npx prettier --write .
-```
-- これは、prettierを実行するコマンドです。
-- これでコードのフォーマットが整います。
-
-## 環境構築方法
-```
-    ### Laravel インストール方法
-    1. `docker compose build --no-cache` (ビルドする)
-    2. `docker compose up -d` (コンテナをたてる)
-    3. `docker compose exec app sh` (appコンテナに入る)
-    4. `composer create-project --prefer-dist laravel/laravel . "10.*"` (src配下にLaravel10をインストール)
-    5. ブラウザで `http://localhost` にアクセスし、Laravelのロゴ入りのトップページが表示されることを確認
-```
-
-<img width="1446" alt="スクリーンショット 2023-06-09 19 39 34" src="https://github.com/posse-ap/template-ph3-website/assets/33271639/69d42fe3-4e3a-4087-91a9-c55640a2671f">
-
-1. `src > .env` の内容を以下のように書き換える
-    ```
-    DB_CONNECTION=mysql
-    DB_HOST=mysql
-    DB_PORT=3306
-    DB_DATABASE=website
-    DB_USERNAME=posse
-    DB_PASSWORD=password
-    ```
-2. 以下のコマンドを打つ
-```
-make arisatan
-```
 
