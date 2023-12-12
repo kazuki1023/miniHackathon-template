@@ -19,20 +19,30 @@
 
 ### 2. それをルートディレクトリの.envとgithubのrepositoryのsecretに登録する
 2-1. ルートディレクトリの.envに以下を追加
+
 ```
 GITHUB_TOKEN=1-6で生成したtoken
 ```
+
 2-2. githubのrepositoryのsettingsからsecrets and variablesを選択
+
 2-3. actionsを選択
+
 2-4. New repository secretを選択
+
 2-5. Nameに`TOKEN`と入力
+
 2-6. Secretに1-6で生成したtokenを入力
+
 2-7. Add secretを押す
 
 ### 3. それをセットした状態にして、actionsタブからworkflowを実行する
 3-1. actionsタブを選択
+
 3-2. `Create Issues from Markdown Templates`を選択
+
 3-3. Run workflowを選択
+
 3-4. Run workflowを押す(ブランチ変更しなくて大丈夫です！)
 
 ## 環境構築方法
