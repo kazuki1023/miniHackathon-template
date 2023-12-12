@@ -1,11 +1,13 @@
 ## [重要]issue作成方法
 今回、issueはgithubActionsを用いると自動で作成されるようになってます。
 - 自動で作成されたものに加えて、自分で作成したいissueがある場合は、github上で作成してもらって構いません。
+またprojectを作成して、そこでissueを管理して欲しいので、projectを作成してください。
 
 大まかな流れは以下の通りです。
 1. githubのtokenを取得する
 2. それをルートディレクトリの.envとgithubのrepositoryのsecretに登録する
-3. それをセットした状態にして、actionsタブからworkflowを実行する
+3. projectを作成し、そのurlを.github/workflows/project.ymlのproject_url(16行目)にセットする
+4. それをセットした状態にして、actionsタブからworkflowを実行する
 
 ## 以下詳細な流れです
 ### 1. githubのtokenを取得する
@@ -14,7 +16,7 @@
 1-3. Generate new token(classic)を選択
 - 選択がわかりやすいので、こちらを選択してますが、どちらでも構いません。
 1-4. Noteに任意の名前を入力
-1-5. repoとworkflowにチェックを入れる
+1-5. ``repo``と``workflow``と``project``にチェックを入れる
 1-6. Generate tokenを押す
 
 ### 2. それをルートディレクトリの.envとgithubのrepositoryのsecretに登録する
@@ -36,14 +38,16 @@ GITHUB_TOKEN=1-6で生成したtoken
 
 2-7. Add secretを押す
 
-### 3. それをセットした状態にして、actionsタブからworkflowを実行する
-3-1. actionsタブを選択
+### 3. projectを作成し、そのurlを.github/workflows/project.ymlのproject_url(16行目)にセットする
 
-3-2. `Create Issues from Markdown Templates`を選択
+### 4. それをセットした状態にして、actionsタブからworkflowを実行する
+4-1. actionsタブを選択
 
-3-3. Run workflowを選択
+4-2. `Create Issues from Markdown Templates`を選択
 
-3-4. Run workflowを押す(ブランチ変更しなくて大丈夫です！)
+4-3. Run workflowを選択
+
+4-4. Run workflowを押す(ブランチ変更しなくて大丈夫です！)
 
 ## 環境構築方法
 ```
