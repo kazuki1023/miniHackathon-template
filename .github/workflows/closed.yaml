@@ -1,0 +1,22 @@
+name: Issue Completion
+
+on:
+  issues:
+    types: [closed]
+
+jobs:
+  add-comment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Comment on issue
+      uses: actions/github-script@v4
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        script: |
+          const issueNumber = context.issue.number;
+          github.issues.createComment({
+            issue_number: issueNumber,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '![Image](https://github.com/kazuki1023/miniHackathon-202312/raw/main/Image/3BD53A41-0D42-476A-A814-66B6CE091BC8.jpg)'
+          })
