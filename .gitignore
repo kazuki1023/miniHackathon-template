@@ -1,3 +1,5 @@
 .history
 .DS_Store
 /docker/db-store
+.env
+node_modules
