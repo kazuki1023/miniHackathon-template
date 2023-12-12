@@ -40,6 +40,14 @@ GITHUB_TOKEN=1-6で生成したtoken
 
 ### 3. projectを作成し、そのurlを.github/workflows/project.ymlのproject_url(16行目)にセットする
 
+### 4. .github/scripts/create_issues.tsの以下の部分を変更する
+- 以下の部分を変更してください
+```
+// リポジトリの所有者とリポジトリ名
+const owner = "";
+const repo = "";
+```
+ここまで終わったら、mainブランチにpushしてください！！！
 ### 4. それをセットした状態にして、actionsタブからworkflowを実行する
 4-1. actionsタブを選択
 

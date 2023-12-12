@@ -1,8 +1,9 @@
 name: Add To GitHub projects
 on:
-  issues:
+  workflow_run:
+    workflows: ["Create Issues from Markdown Templates"]
     types:
-      - opened
+      - completed
 env:
   GITHUB_TOKEN: ${{ secrets.TOKEN }}
 jobs:
