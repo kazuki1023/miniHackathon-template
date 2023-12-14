@@ -1,7 +1,8 @@
 ## [重要]issue作成方法
 今回、issueはgithubActionsを用いると自動で作成されるようになってます。
 - 自動で作成されたものに加えて、自分で作成したいissueがある場合は、github上で作成してもらって構いません。
-またprojectを作成して、そこでissueを管理して欲しいので、projectを作成してください。
+
+- またprojectを作成して、そこでissueを管理して欲しいので、projectを作成してください。
 
 大まかな流れは以下の通りです。
 1. githubのtokenを取得する
@@ -50,14 +51,16 @@ const owner = "";
 const repo = "";
 ```
 ここまで終わったら、mainブランチにpushしてください！！！
-### 4. それをセットした状態にして、actionsタブからworkflowを実行する
-4-1. actionsタブを選択
+### 5. それをセットした状態にして、actionsタブからworkflowを実行する
+5-1. actionsタブを選択
 
-4-2. `Create Issues from Markdown Templates`を選択
+5-2. `Create Issues from Markdown Templates`を選択
 
-4-3. Run workflowを選択
+5-3. Run workflowを選択
 
-4-4. Run workflowを押す(ブランチ変更しなくて大丈夫です！)
+5-4. Run workflowを押す(ブランチ変更しなくて大丈夫です！)
+
+これでissueが作成され、projectに追加されます！！！
 
 ## 環境構築方法
 ```
