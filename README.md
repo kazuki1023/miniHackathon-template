@@ -74,13 +74,17 @@
 ## issue
 - issueで作成してあるので、全部やってください
 
-## 作業の進め方
-- forkしてclone
+## 作業の方針
+### チームの代表者１人が以下の作業を行ってください
+- use this templateを押して、リポジトリを作成してください
+    - create a new repositoryを押してください
+- この後は[詳細]((./setup.md))に従ってください！
 - issue番号のブランチを作成して作業
 - タスクはprojectで管理してください
 
 ## 注意
 - 一部の需要を考慮して`arisatan`コマンドでも動くようになってます
+ex) `php arisatan migrate` `php arisatan route:list` など
 - 配色等は各自変更してもらって大丈夫ですが、以下の条件を守ってください
     - tailwind以外使わない
     - tailwind.config.jsにcolorの設定を書く
