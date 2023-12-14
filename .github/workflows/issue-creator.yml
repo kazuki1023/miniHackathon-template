@@ -24,5 +24,5 @@ jobs:
 
       - name: Run Issue Creation Script
         env:
-          GITHUB_TOKEN: ${{ SECRETS.TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.TOKEN}}
         run: node .github/scripts/create_issues.js
