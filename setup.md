@@ -11,12 +11,14 @@
 
 ## 以下詳細な流れです
 ### 1. githubのtokenを取得する
-1-1. githubのsettingsからDeveloper settingsを選択
+1-1. githubのprofileのsettingsからDeveloper settingsを選択
+![参考画像](/Image/スクリーンショット%202023-12-14%2014.29.06.png)
 1-2. Personal access tokensを選択
 1-3. Generate new token(classic)を選択
 - 選択がわかりやすいので、こちらを選択してますが、どちらでも構いません。
 1-4. Noteに任意の名前を入力
 1-5. ``repo``と``workflow``と``project``にチェックを入れる
+![どこにチェック入れるか](/Image/スクリーンショット%202023-12-14%2014.31.06.png)
 1-6. Generate tokenを押す
 
 ### 2. それをルートディレクトリの.envとgithubのrepositoryのsecretに登録する
