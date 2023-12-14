@@ -14,6 +14,6 @@ jobs:
       - uses: actions/add-to-project@v0.3.0
         with:
           # https://github.com/orgs|users/<ownerName>/projects/<projectNumber>
-          project-url: https://github.com/users/kazuki1023/projects/18
+          project-url: https://github.com/users/kazuki1023/projects/16
           # repo and projectのtokenが必要
           github-token: ${{ env.GITHUB_TOKEN }}
