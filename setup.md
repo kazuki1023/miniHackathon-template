@@ -41,7 +41,7 @@ GITHUB_TOKEN=1-6で生成したtoken
 
 2-7. Add secretを押す
 
-### 3. projectを作成し、そのurlを.github/workflows/project.ymlのproject_url(16行目)にセットする
+### 3. New projectを作成し、そのurlを.github/workflows/project.ymlのproject_url(16行目)にセットする
 
 ### 4. .github/scripts/create_issues.tsの以下の部分を変更する
 - 以下の部分を変更してください
