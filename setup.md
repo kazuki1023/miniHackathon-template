@@ -23,7 +23,7 @@
 1-6. Generate tokenを押す
 
 ### 2. それをルートディレクトリの.envとgithubのrepositoryのsecretに登録する
-2-1. ルートディレクトリの.envに以下を追加
+2-1. ルートディレクトリに.envを作成して以下を追加
 
 ```
 GITHUB_TOKEN=1-6で生成したtoken
@@ -74,7 +74,9 @@ const repo = "";
 
 <img width="1446" alt="スクリーンショット 2023-06-09 19 39 34" src="https://github.com/posse-ap/template-ph3-website/assets/33271639/69d42fe3-4e3a-4087-91a9-c55640a2671f">
 
-1. `src > .env` の内容を以下のように書き換える
+1. `src > .env.example` と同じ階層に、`.env` を作成する
+2. `src > .env.example` の内容をコピーして、`src > .env` の中に貼り付ける
+3, `src > .env` の以下の該当箇所を修正する
     ```
     DB_CONNECTION=mysql
     DB_HOST=mysql
